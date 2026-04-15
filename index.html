@@ -1,128 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mobile_97</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile 97</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: #111;
+      background: #fff;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    header {
+      padding: 20px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 20px;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #007aff;
+    }
+
+    .hero {
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 28px;
+      background: #007aff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #005ecb;
+      transform: translateY(-2px);
+    }
+
+    .features {
+      padding: 60px 0;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      text-align: center;
+    }
+
+    .feature {
+      padding: 20px;
+      border: 1px solid #eee;
+      border-radius: 12px;
+      transition: 0.3s;
+    }
+
+    .feature:hover {
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+      transform: translateY(-5px);
+    }
+
+    .feature h3 {
+      margin-bottom: 10px;
+    }
+
+    .contact {
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    .contact h2 {
+      margin-bottom: 20px;
+    }
+
+    .contact form {
+      max-width: 500px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-family: inherit;
+    }
+
+    footer {
+      padding: 30px 0;
+      text-align: center;
+      color: #777;
+      font-size: 14px;
+    }
+
+    @media(max-width: 768px) {
+      .hero h1 {
+        font-size: 32px;
+      }
+
+      .features {
+        grid-template-columns: 1fr;
+      }
+
+      nav {
+        display: none;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="container hero-content">
-    <div class="hero-text">
-      <h1>Precision. Power. Simplicity.</h1>
-      <p>Mobile_97 is designed for a refined everyday experience — fast, minimal, and built to last.</p>
-      <div class="cta-group">
-        <button class="btn primary">Buy Now</button>
-        <button class="btn secondary">View Details</button>
-      </div>
-    </div>
-    <div class="hero-image">
-      <img src="assets/phone.png" alt="Mobile_97"/>
-    </div>
-  </div>
-</section>
-
-<!-- PROBLEMS -->
-<section class="problems">
   <div class="container">
-    <h2>Most smartphones overcomplicate the experience</h2>
-    <div class="problem-grid">
-      <div>Laggy performance</div>
-      <div>Short battery life</div>
-      <div>Cluttered interfaces</div>
-    </div>
-  </div>
-</section>
 
-<!-- BENEFITS -->
-<section class="benefits">
-  <div class="container">
-    <h2>Built around what actually matters</h2>
-    <div class="benefit-grid">
-      <div>
-        <h3>All-day battery</h3>
-        <p>Stay powered from morning to night without interruption.</p>
-      </div>
-      <div>
-        <h3>Fluid performance</h3>
-        <p>Seamless navigation and responsive interaction.</p>
-      </div>
-      <div>
-        <h3>Minimal interface</h3>
-        <p>No distractions. Just clarity and speed.</p>
-      </div>
-      <div>
-        <h3>Premium build</h3>
-        <p>Clean materials with a refined finish.</p>
-      </div>
-    </div>
-  </div>
-</section>
+    <header>
+      <div class="logo">Mobile 97</div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#features">Features</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-<!-- SHOWCASE -->
-<section class="showcase">
-  <div class="container">
-    <h2>Designed to feel different</h2>
-    <img src="assets/phone-2.png" alt="Mobile_97 angles"/>
-  </div>
-</section>
+    <section class="hero">
+      <h1>Modern Mobile Experience</h1>
+      <p>Discover clean design, smooth performance, and powerful features with Mobile 97.</p>
+      <a href="#contact" class="btn">Get Started</a>
+    </section>
 
-<!-- SOCIAL PROOF -->
-<section class="reviews">
-  <div class="container">
-    <h2>Trusted by users</h2>
-    <div class="review-grid">
-      <div class="review">
-        <p>"Cleanest phone experience I’ve had in years."</p>
-        <span>— Alex M.</span>
+    <section class="features" id="features">
+      <div class="feature">
+        <h3>Fast Performance</h3>
+        <p>Optimized for speed and smooth usage across all devices.</p>
       </div>
-      <div class="review">
-        <p>"Battery easily lasts a full day. No stress anymore."</p>
-        <span>— Daniel K.</span>
+
+      <div class="feature">
+        <h3>Clean Design</h3>
+        <p>Minimal and modern interface focused on usability.</p>
       </div>
-    </div>
-  </div>
-</section>
 
-<!-- OFFER -->
-<section class="offer">
-  <div class="container offer-box">
-    <h2>Limited Offer</h2>
-    <p><span class="old-price">$499</span> $349</p>
-    <p>Includes free case + screen protector</p>
-    <button class="btn primary large">Get Mobile_97</button>
-  </div>
-</section>
+      <div class="feature">
+        <h3>Responsive</h3>
+        <p>Fully adaptable layout for mobile, tablet, and desktop.</p>
+      </div>
+    </section>
 
-<!-- FAQ -->
-<section class="faq">
-  <div class="container">
-    <h2>FAQ</h2>
-    <div class="faq-item">
-      <h4>How long does the battery last?</h4>
-      <p>Up to a full day with standard use.</p>
-    </div>
-    <div class="faq-item">
-      <h4>Is there a warranty?</h4>
-      <p>Yes, 1-year limited warranty included.</p>
-    </div>
-    <div class="faq-item">
-      <h4>Do you offer returns?</h4>
-      <p>30-day hassle-free returns.</p>
-    </div>
-  </div>
-</section>
+    <section class="contact" id="contact">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="4" placeholder="Your Message" required></textarea>
+        <button class="btn" type="submit">Send Message</button>
+      </form>
+    </section>
 
-<!-- FINAL CTA -->
-<section class="final-cta">
-  <div class="container">
-    <h2>Upgrade your everyday experience</h2>
-    <button class="btn primary large">Buy Now</button>
+    <footer>
+      <p>© 2026 Mobile 97. All rights reserved.</p>
+    </footer>
+
   </div>
-</section>
 
 </body>
 </html>
